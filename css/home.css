@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+section{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    padding :100px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: space-between;
+    
+    z-index: 800;
+}
+
+header .logo{
+    position: relative;
+    color:#3D550C;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    top:0;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background: #ccc;
+  }
+
+
+
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul  li{
+    list-style: none;
+    margin: 10px;
+    
+
+}
+header ul  li a{
+    display: inline-block;
+    color:#3D550C;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 20px;
+    
+    padding: 8px 18px;
+    user-select: none;
+    text-decoration: none;
+    
+}
+
+
+
+header ul li a.active,header ul li a:hover{
+    background: #E7F2F8;
+    
+    border-radius: 30px;
+}
+
+.banner{
+    position:relative;
+    display: flex;
+
+}
+
+.banner .text{
+    position:relative;
+    max-width: 500px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.banner .text h1{
+    color:#3D550C; 
+}
+
+.banner .text a{
+    display:inline-block;
+    margin-top: 20px;
+    padding:15px 30px;
+    background: black;
+    color:blanchedalmond;
+    
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+    position: absolute;
+    bottom:40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a {
+    position:relative;
+    display: inline-block;
+    margin-right: 15px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom:20px;
+    margin:20px;
+    right:0;
+    transition:0.3s;
+
+}
+
+.social li a img{
+    transform: scale(0.5);
+}
+
+.social li a:hover{
+    background: #B4F8C8;
+    transform:translateY(-10px);
+}
+
+.social p{
+    position: absolute;
+    
+    justify-content: center;
+    align-items: center;
+    color:#3D550C;
+    bottom:10px;
+    font-size: 20px;
+}
+.cover{
+    position:absolute;
+    top:130px;
+    right: 150px;
+    
+    max-width: 600px;
+    justify-content: center;
+    transition: all 0.5s linear;
+    
+}
+
+.cover:hover{
+    
+    background: #B4F8C8;
+    transform:scale(1.1);
+}
+figure{
+    height:266px;
+    overflow: hidden;
+
+}
+
+.button {
+    position: relative;
+    top:0;
+    margin: 10px;
+    
+    font-size: 20px;
+    color:#3D550C;
+}
+@media only screen and (min-width: 600px){
+    header{
+        
+        position: absolute;
+        top:0;
+        left: 0%;
+    }
+    header ul li{
+        margin:0;
+    }
+    header .logo{
+        left:0;
+    }
+    .search-container{
+        position: relative;
+        top:10px;
+        margin-left: 10px;
+    }
+    .banner .text{
+        position: relative;
+        margin-left: 80px;
+        margin-top: 100px;
+    }
+    .cover{
+        margin-top: 20px;
+    }
+    .banner .text a{
+        position: relative;
+        margin-left: 120px;
+    }
+    .social {
+        position: relative;
+        margin-left: 100px;
+    }
+
+
+}
+
+@media only screen and (max-width: 380px) {
+    header{
+        
+        position: absolute;
+        top:0;
+        left: 0%;
+    }
+    header ul li{
+        margin:0;
+    }
+    header .logo{
+        left:0;
+    }
+    .search-container {
+        
+        position: relative;
+        top:100px;
+        left:250px;
+    }
+    
+    .banner .text{
+        max-width: 200px;
+        max-height: 200px;
+        top:130px;
+        right:0;
+        bottom:10px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+        
+    }
+
+    .cover{
+        position: absolute;
+        top:130px;
+        right: 1px;
+        max-width:300px;
+        margin-bottom: 30px;
+        
+        
+        
+    }
+    footer .social{
+        position: relative;
+        bottom:0;
+    }
+    .social li{
+        margin-top: 200px;
+        
+    }
+    .social li a{
+        position: relative;
+        right:10px;
+        bottom: 0;
+    }
+    .social p{
+        position: absolute;
+        bottom:0;
+    }
+}
+
+
+
+
+
+

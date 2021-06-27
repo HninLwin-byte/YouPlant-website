@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+.title{
+    color:#3D550C;
+}
+h1{
+    text-align: center;
+}
+.about{
+    background:#d3d3d3;
+}
+.text{
+    display:flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    height:500px;
+    color:#3D550C;
+
+    
+}
+.text2{
+    text-align: center;
+    font-size: 20px;
+    color:#3D550C;
+
+}
+@media only screen and (min-width: 600px) {
+    .text{
+        height:600px;
+    }
+
+}
+@media only screen and (max-width: 380px) {
+    .text{
+        height:1300px;
+    }
+}
